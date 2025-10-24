@@ -55,13 +55,23 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background to-background -z-10"></div>
+      <div 
+        className="fixed inset-0 opacity-20 pointer-events-none -z-10"
+        style={{ 
+          backgroundImage: 'url(https://cdn.poehali.dev/projects/e2ab5612-346c-4fa7-8a7f-a192a299a907/files/3a7a609b-f3b7-4ca0-a32f-97a8129aab88.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          filter: 'blur(8px)'
+        }}
+      ></div>
       
       <header className="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50 border-b border-primary/20">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="relative">
               <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                <Icon name="Sparkles" className="text-black" size={28} />
+                <Icon name="Gun" className="text-black" size={28} />
               </div>
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-lg blur-lg opacity-50"></div>
             </div>
@@ -89,8 +99,10 @@ const Index = () => {
       </header>
 
       <section className="pt-32 pb-20 px-4 relative overflow-hidden">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
         
         <div className="container mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -99,8 +111,8 @@ const Index = () => {
                 Новая коллекция 2024
               </Badge>
               <h1 className="text-6xl md:text-8xl font-bold leading-tight">
-                <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-                  ДымоGun
+                <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent flex items-center gap-4">
+                  Дымо<Icon name="Gun" className="inline text-primary" size={64} />Gun
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground">
@@ -378,7 +390,7 @@ const Index = () => {
             <div className="flex items-center gap-3">
               <div className="relative">
                 <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                  <Icon name="Sparkles" className="text-black" size={24} />
+                  <Icon name="Gun" className="text-black" size={24} />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-lg blur-lg opacity-50"></div>
               </div>
