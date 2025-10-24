@@ -76,7 +76,10 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-lg blur-lg opacity-50"></div>
             </div>
             <div>
-              <div className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">ДымоGun</div>
+              <div className="text-2xl font-bold">
+                <span style={{ color: '#FF10F0', textShadow: '0 0 20px #FF10F0' }}>Дымо</span>
+                <span style={{ color: '#00FF41', textShadow: '0 0 20px #00FF41' }}>Gun</span>
+              </div>
               <div className="text-xs text-muted-foreground">Vape Shop</div>
             </div>
           </div>
@@ -110,10 +113,10 @@ const Index = () => {
               <Badge className="bg-gradient-to-r from-primary to-accent text-black border-0">
                 Новая коллекция 2024
               </Badge>
-              <h1 className="text-6xl md:text-8xl font-bold leading-tight">
-                <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent flex items-center gap-4">
-                  Дымо<Icon name="Gun" className="inline text-primary" size={64} />Gun
-                </span>
+              <h1 className="text-6xl md:text-8xl font-bold leading-tight flex items-center gap-4">
+                <span style={{ color: '#FF10F0', textShadow: '0 0 40px #FF10F0, 0 0 80px #FF10F0' }}>Дымо</span>
+                <Icon name="Gun" className="inline" style={{ color: '#00FF41', filter: 'drop-shadow(0 0 20px #00FF41)' }} size={64} />
+                <span style={{ color: '#00FF41', textShadow: '0 0 40px #00FF41, 0 0 80px #00FF41' }}>Gun</span>
               </h1>
               <p className="text-xl text-muted-foreground">
                 Твой надежный вейп-шоп с оригинальной продукцией и моментальной доставкой. Широкий выбор устройств и жидкостей.
@@ -395,7 +398,10 @@ const Index = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-lg blur-lg opacity-50"></div>
               </div>
               <div>
-                <div className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">ДымоGun</div>
+                <div className="text-xl font-bold">
+                  <span style={{ color: '#FF10F0', textShadow: '0 0 15px #FF10F0' }}>Дымо</span>
+                  <span style={{ color: '#00FF41', textShadow: '0 0 15px #00FF41' }}>Gun</span>
+                </div>
                 <div className="text-xs text-muted-foreground">Vape Shop</div>
               </div>
             </div>
